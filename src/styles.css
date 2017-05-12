@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url(http://www.wallpaperbetter.com/wallpaper/395/781/225/low-poly-abstract-background-1080P-wallpaper.jpg);
+  background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+}

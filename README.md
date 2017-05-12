@@ -1,4 +1,4 @@
-# NgTracker
+# Overwatch Character Roster
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
@@ -26,3 +26,37 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Planning
+
+  1. Configuration/dependencies
+    * Angular
+    * Gulp
+    * Bower
+    * Foundation
+    * Firebase
+
+  2. Specs
+    * User/Admin
+    * Filter by specific criteria dps/tank/healing
+    * Add, edit, delete.
+
+  3. Integration
+    * Character model
+    * Character service
+    * Character List component
+    * Character detail component
+    * Admin component
+    * Edit component
+    * Welcome component
+    * Routing app
+    * Role/type pipe
+
+    4.  UX/UI
+      * Foundation
+      * Admin/User toggle
+
+    5. Polish
+      * Edit README
+      * Dynamic page content - hide/show forms
+      * Materialize

@@ -1,1 +1,25 @@
+<div class="top-bar">
+  <div class="top-bar-title">
+    <strong><a routerLink="">Overwatch Roster</a></strong>
+  </div>
+  <div id="responsive-menu">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li><a routerLink="heroes">Heroes</a></li>
+        <li><a routerLink="about">About</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <p>User Mode<p>
+      <div class="switch">
+        <input class="switch-input" id="adminToggle" type="checkbox" name="adminToggle">
+        <label class="switch-paddle" for="adminToggle">
+          <span class="show-for-sr">Admin</span>
+          <span class="switch-active" aria-hidden="true">Admin</span>
+          <span class="switch-inactive" aria-hidden="true">Guest</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
 <router-outlet></router-outlet>

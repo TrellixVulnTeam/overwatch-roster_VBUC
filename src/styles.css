@@ -1,7 +1,7 @@
 body {
-  background-image: url(http://www.wallpaperbetter.com/wallpaper/395/781/225/low-poly-abstract-background-1080P-wallpaper.jpg);
-  background-position: center center;
-	background-repeat:  no-repeat;
-	background-attachment: fixed;
-	background-size:  cover;
+  background-image: url(http://www.wallpaperbetter.com/wallpaper/395/781/225/low-poly-abstract-background-1080P-wallpaper.jpg) !important;
+  background-position: center center !important;
+	background-repeat:  no-repeat !important;
+	background-attachment: fixed !important;
+	background-size:  cover !important;
 }

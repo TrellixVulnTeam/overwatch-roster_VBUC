@@ -14,10 +14,16 @@ export class CharacterListComponent implements OnInit {
 
   characters: FirebaseListObservable<any[]>;
 
+  currentRoute: string = this.router.url;
+
   constructor(private router: Router, private characterService: CharacterService) { }
 
   ngOnInit() {
     this.characters = this.characterService.getCharacters();
+  }
+
+  goToDetail(clickedCharacter) {
+    this.router.navigate(['heroes',clickedCharacter.$key])
   }
 
 }

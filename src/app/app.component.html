@@ -10,15 +10,19 @@
       </ul>
     </div>
     <div class="top-bar-right">
-      <p>User Mode<p>
-      <div class="switch">
-        <input class="switch-input" id="adminToggle" type="checkbox" name="adminToggle">
-        <label class="switch-paddle" for="adminToggle">
-          <span class="show-for-sr">Admin</span>
-          <span class="switch-active" aria-hidden="true">Admin</span>
-          <span class="switch-inactive" aria-hidden="true">Guest</span>
-        </label>
-      </div>
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li><p>user mode: </p></li>
+        <li>
+          <div class="switch">
+            <input class="switch-input" id="adminToggle" type="checkbox" name="adminToggle">
+            <label class="switch-paddle" for="adminToggle">
+              <span class="show-for-sr">Admin</span>
+              <span class="switch-active" aria-hidden="true">Admin</span>
+              <span class="switch-inactive" aria-hidden="true">Guest</span>
+            </label>
+          </div>
+        </li>
+    </ul>
     </div>
   </div>
 </div>

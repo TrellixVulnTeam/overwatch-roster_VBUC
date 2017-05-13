@@ -19,4 +19,8 @@ export class CharacterService {
     return this.database.object('characters/' + characterId)
   }
 
+  addCharacter(newCharacter: Character) {
+    this.characters.push(newCharacter);
+  }
+
 }

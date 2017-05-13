@@ -3,41 +3,56 @@
     "image": "http://vignette2.wikia.nocookie.net/overwatch/images/6/6d/Tracer_Portrait.png/revision/latest?cb=20160503194947&path-prefix=de",
     "name": "Tracer",
     "role": "Offsene",
-    "difficulty": "2",
-    "health": "150",
-    "armor": "0",
-    "shield": "0",
-    "total": "150",
-    "place": "Londond, England"
+    "difficulty": 2,
+    "health": 150,
+    "armor": 0,
+    "shield": 0,
+    "total": 150,
+    "place": "Londond, England",
+    "info": "Lorem ipsum dolor sit amet, no eos graecis offendit vivendum, quodsi feugiat hendrerit in quo."
     },{
     "image": "https://hydra-media.cursecdn.com/overwatch.gamepedia.com/thumb/0/07/Reinhardt-portrait.png/350px-Reinhardt-portrait.png?version=ef1671e6601ed71a5071765f18a85317",
     "name": "Reinhardt",
     "role": "Tank",
-    "difficulty": "1",
-    "health": "300",
-    "armor": "200",
-    "shield": "0",
-    "total": "500",
-    "place": "Stuttgart, Germany"
+    "difficulty": 1,
+    "health": 300,
+    "armor": 200,
+    "shield": 0,
+    "total": 500,
+    "place": "Stuttgart, Germany",
+    "info": "Lorem ipsum dolor sit amet, no eos graecis offendit vivendum, quodsi feugiat hendrerit in quo."
     },{
     "image": "https://vignette2.wikia.nocookie.net/overwatch/images/d/dc/Dva_portrait.png/revision/latest?cb=20160429040128",
     "name": "D.Va",
     "role": "Tank",
-    "difficulty": "2",
-    "health": "400",
-    "armor": "200",
-    "shield": "0",
-    "total": "600",
-    "place": "Busan, South Korea"
+    "difficulty": 2,
+    "health": 400,
+    "armor": 200,
+    "shield": 0,
+    "total": 600,
+    "place": "Busan, South Korea",
+    "info": "Lorem ipsum dolor sit amet, no eos graecis offendit vivendum, quodsi feugiat hendrerit in quo."
     },{
     "image": "http://orig02.deviantart.net/46d7/f/2016/235/0/3/_overwatch__ana__render__by_popokupingupop90-daezng0.png",
     "name": "Ana",
     "role": "Support",
-    "difficulty": "3",
-    "health": "200",
-    "armor": "0",
-    "shield": "0",
-    "total": "200",
-    "place": "Cairo, Egypt"
+    "difficulty": 3,
+    "health": 200,
+    "armor": 0,
+    "shield": 0,
+    "total": 200,
+    "place": "Cairo, Egypt",
+    "info": "Lorem ipsum dolor sit amet, no eos graecis offendit vivendum, quodsi feugiat hendrerit in quo."
+    },{
+      "image": "http://overwatch-op-guide.com/wp-content/uploads/2016/07/JUNKRAT.png",
+      "name": "Junkrat",
+      "role": "Defense",
+      "difficulty": 2,
+      "health": 200,
+      "armor": 0,
+      "shield": 0,
+      "total": 200,
+      "place": "Junkertown, Australia",
+      "info": "Lorem ipsum dolor sit amet, no eos graecis offendit vivendum, quodsi feugiat hendrerit in quo."
     }]
 }

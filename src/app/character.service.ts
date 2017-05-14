@@ -23,4 +23,20 @@ export class CharacterService {
     this.characters.push(newCharacter);
   }
 
+  updateCharacter(character) {
+    var firebaseEntry = this.getCharacterById(character.$key);
+    firebaseEntry.update({
+      image: character.image,
+      name: character.name,
+      role: character.role,
+      difficulty: character.difficulty,
+      health: character.health,
+      armor: character.armor,
+      shield: character.shield,
+      total: character.total,
+      place: character.place,
+      info: character.info
+    });
+  }
+
 }

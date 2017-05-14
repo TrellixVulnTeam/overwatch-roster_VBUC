@@ -1,17 +1,23 @@
+<br>
 <div class="column row">
-  <div class="callout secondary">
+  <div class="callout">
+    <p>This is the admin page. Add new characters with the "Add New Hero" form or scroll down to edit existing characters</p>
+  </div>
+</div>
+<div class="column row">
+  <div class="callout">
     <h3>Add New Hero</h3>
     <label>
       Image URL
-      <input type="text" #image>
+      <input #image type="text">
     </label>
     <label>
       Name
-      <input type="text" #name>
+      <input #name type="text">
     </label>
     <label>
       Role
-      <select>
+      <select #role>
         <option value="offense">Offense</option>
         <option value="defense">Defense</option>
         <option value="tank">Tank</option>
@@ -20,32 +26,39 @@
     </label>
     <label>
       Difficulty
-      <input type="number" #difficulty>
+      <select #difficulty>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
     </label>
     <label>
       Health
-      <input type="number" #health>
+      <input #health type="number">
     </label>
     <label>
       Armor
-      <input type="number" #armor>
+      <input #armor type="number">
     </label>
     <label>
       Shield
-      <input type="number" #shield>
+      <input #shield type="number">
     </label>
     <label>
-      total
-      <input type="number" #total>
+      Total
+      <input #total type="number">
     </label>
     <label>
       Base of Operations
-      <input type="text" #place>
+      <input #place type="text">
     </label>
     <label>
       Additional Info
       <textarea #info></textarea>
     </label>
-    <button class="button primary" (click)="submitForm(image.value, name.value, role.value, difficulty.value, health.value, armor.value, shield.value, total.value, place.value, info.value)">Add</button>
+    <button class="button primary" (click)="submitForm(image.value, name.value, role.value, difficulty.value, health.value, armor.value, shield.value, total.value, place.value, info.value); image.value=''; name.value=''; role.value=''; difficulty.value=''; health.value=''; armor.value=''; shield.value=''; total.value=''; place.value=''; info.value=''">Add</button>
   </div>
+</div>
+<div>
+  <app-character-list></app-character-list>
 </div>

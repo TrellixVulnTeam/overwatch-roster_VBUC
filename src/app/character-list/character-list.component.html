@@ -3,8 +3,11 @@
   <h1>Characters</h1>
 </div>
 <div class="row">
-  <div *ngFor="let character of characters | async" class="medium-4 columns">
+  <div *ngFor="let character of characters | async" class="column row">
     <h4 (click)="goToDetail(character)">{{character.name}}</h4>
-    <img src="{{character.image}}" alt="{{character.name}}">
+    <img (click)="goToDetail(character)" src="{{character.image}}" alt="{{character.name}}">
+    <div *ngIf="currentRoute === '/admin'">
+      <app-edit [selectedCharacter]="character"></app-edit>
+    </div>
   </div>
 </div>

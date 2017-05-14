@@ -1,3 +1,57 @@
-<p>
-  edit works!
-</p>
+<div class="row">
+  <div class="small-8 small-offset-2 columns">
+    <div class="callout">
+      Edit
+      <label>
+        Image URL
+        <input [(ngModel)]="selectedCharacter.image" type="text">
+      </label>
+      <label>
+        Name
+        <input [(ngModel)]="selectedCharacter.name" type="text">
+      </label>
+      <label>
+        Role
+        <select [(ngModel)]="selectedCharacter.role">
+          <option value="offense">Offense</option>
+          <option value="defense">Defense</option>
+          <option value="tank">Tank</option>
+          <option value="support">Support</option>
+        </select>
+      </label>
+      <label>
+        Difficulty
+        <select [(ngModel)]="selectedCharacter.difficulty">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </label>
+      <label>
+        Health
+        <input [(ngModel)]="selectedCharacter.health" type="number">
+      </label>
+      <label>
+        Armor
+        <input [(ngModel)]="selectedCharacter.armor" type="number">
+      </label>
+      <label>
+        Shield
+        <input [(ngModel)]="selectedCharacter.shield" type="number">
+      </label>
+      <label>
+        Total
+        <input [(ngModel)]="selectedCharacter.total" type="number">
+      </label>
+      <label>
+        Base of Operations
+        <input [(ngModel)]="selectedCharacter.place" type="text">
+      </label>
+      <label>
+        Additional Info
+        <textarea [(ngModel)]="selectedCharacter.info"></textarea>
+      </label>
+      <button class="button primary" (click)="startUpdate(selectedCharacter)">Submit</button>
+    </div>
+  </div>
+</div>

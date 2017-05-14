@@ -16,6 +16,8 @@ export class CharacterListComponent implements OnInit {
 
   currentRoute: string = this.router.url;
 
+  filterByRole: string = "all";
+
   constructor(private router: Router, private characterService: CharacterService) { }
 
   ngOnInit() {
@@ -24,6 +26,10 @@ export class CharacterListComponent implements OnInit {
 
   goToDetail(clickedCharacter) {
     this.router.navigate(['heroes',clickedCharacter.$key])
+  }
+
+  onChange(optionSelect) {
+    this.filterByRole = optionSelect;
   }
 
 }

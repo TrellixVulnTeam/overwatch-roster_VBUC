@@ -1,9 +1,21 @@
 
-<div class="column row">
-  <h1>Characters</h1>
+<div class="row">
+  <div class="small-7 columns">
+    <h1>Characters</h1>
+  </div>
+  <div class="small-5 columns">
+    filter by:
+    <select (change)="onChange($event.target.value)">
+      <option value="all">All Heroe Roles</option>
+      <option value="offense">Offense</option>
+      <option value="defense">Defense</option>
+      <option value="tank">Tank</option>
+      <option value="support">Support</option>
+    </select>
+  </div>
 </div>
 <div class="row">
-  <div *ngFor="let character of characters | async" class="column row">
+  <div *ngFor="let character of characters | async | role:filterByRole" class="column row">
     <h4 (click)="goToDetail(character)">{{character.name}}</h4>
     <img (click)="goToDetail(character)" src="{{character.image}}" alt="{{character.name}}">
     <div *ngIf="currentRoute === '/admin'">

@@ -51,7 +51,8 @@
         Additional Info
         <textarea [(ngModel)]="selectedCharacter.info"></textarea>
       </label>
-      <button class="button primary" (click)="startUpdate(selectedCharacter)">Submit</button>
+      <button class="button primary" (click)="startUpdate(selectedCharacter)">Submit</button><hr>
+      <button class="button alert" (click)="startDelete(selectedCharacter)">Delete</button>
     </div>
   </div>
 </div>

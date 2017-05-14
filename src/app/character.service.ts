@@ -39,4 +39,9 @@ export class CharacterService {
     });
   }
 
+  deleteCharacter(character) {
+    var firebaseEntry = this.getCharacterById(character.$key);
+    firebaseEntry.remove();
+  }
+
 }

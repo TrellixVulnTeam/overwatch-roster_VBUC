@@ -21,4 +21,10 @@ export class EditComponent implements OnInit {
     this.characterService.updateCharacter(character);
   }
 
+  startDelete(character) {
+    if(confirm("You may be making a huge mistake. Are you sure?")){
+      this.characterService.deleteCharacter(character);
+    }
+  }
+
 }

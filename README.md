@@ -1,31 +1,27 @@
 # Overwatch Character Roster
 
+#### _Epicodus Friday Project, 5-12-2017_
+
+This app is meant to provide the user with list of playable characters from the game _Overwatch_. Users will be able to view a list of characters, filter characters by role, and detailed pages for each individual character. The admin button will add options to add, edit and delete characters.
+
+![Alt text](src/assets/img/screenshot.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
-## Development server
+## Setup
+  * Clone this repository
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  * Navigate to its folder in your terminal
 
-## Code scaffolding
+  * Run the commands npm install, bower init, bower install, and ng serve in that order
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+  * Navigate to localhost:4200 in your web browser
 
-## Build
+## License
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+  Copyright (c) 2017 **_Christian Martinez_**
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  MIT license
 
 ## Planning
 

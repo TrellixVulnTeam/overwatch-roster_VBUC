@@ -1,10 +1,10 @@
 
 <div class="row">
   <div class="small-7 columns">
-    <h1>Characters</h1>
+    <h1 class="infoText">Characters</h1>
   </div>
   <div class="small-5 columns">
-    filter by:
+    <h5>filter by:</h5>
     <select (change)="onChange($event.target.value)">
       <option value="all">All Heroe Roles</option>
       <option value="offense">Offense</option>
@@ -15,11 +15,15 @@
   </div>
 </div>
 <div class="row">
-  <div *ngFor="let character of characters | async | role:filterByRole" class="column row">
-    <h4 (click)="goToDetail(character)">{{character.name}}</h4>
-    <img (click)="goToDetail(character)" src="{{character.image}}" alt="{{character.name}}">
-    <div *ngIf="currentRoute === '/admin'">
-      <app-edit [selectedCharacter]="character"></app-edit>
+  <div *ngFor="let character of characters | async | role:filterByRole" class="row">
+    <div class="small-8 small-centered columns">
+      <h2 class="text-center infoText" (click)="goToDetail(character)">{{character.name}}</h2>
+      <div class="small-6 small-centered colums">
+        <img (click)="goToDetail(character)" src="{{character.image}}" alt="{{character.name}}" class="float-center listImage">
+      </div>
+      <div *ngIf="currentRoute === '/admin'">
+        <app-edit [selectedCharacter]="character"></app-edit>
+      </div>
     </div>
   </div>
 </div>

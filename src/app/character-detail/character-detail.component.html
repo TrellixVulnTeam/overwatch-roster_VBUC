@@ -1,3 +1,20 @@
 <div class="column row">
-  <h1>{{(characterToDisplay | async)?.name}}</h1>
+  <h1 class="text-center infoText">{{(characterToDisplay | async)?.name}}</h1>
+  <img src="{{(characterToDisplay | async)?.image}}" alt="{{(characterToDisplay | async)?.name}}" class="float-center">
+  <br>
+  <div class="small-8 small-centered columns">
+    <div class="callout">
+      <h4>Character Stats:</h4>
+      <ul>
+        <li>Role: {{(characterToDisplay | async)?.role}}</li>
+        <li>Difficulty: {{(characterToDisplay | async)?.difficulty}}</li>
+        <li>Health: {{(characterToDisplay | async)?.health}}</li>
+        <li>Armor: {{(characterToDisplay | async)?.armor}}</li>
+        <li>Shield: {{(characterToDisplay | async)?.shield}}</li>
+        <li>Total: {{(characterToDisplay | async)?.total}}</li>
+        <li>Base of Operations: {{(characterToDisplay | async)?.place}}</li>
+      </ul>
+      <p>Additional info: {{(characterToDisplay | async)?.info}}</p>
+    </div>
+  </div>
 </div>

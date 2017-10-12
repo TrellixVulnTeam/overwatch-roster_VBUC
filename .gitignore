@@ -26,7 +26,6 @@
 !.vscode/extensions.json
 
 #Firebase credentials
-/src/app/api-keys.ts 
 
 # misc
 /.sass-cache

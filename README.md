@@ -22,37 +22,3 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   Copyright (c) 2017 **_Christian Martinez_**
 
   MIT license
-
-## Planning
-
-  1. Configuration/dependencies
-    * Angular
-    * Gulp
-    * Bower
-    * Foundation
-    * Firebase
-
-  2. Specs
-    * User/Admin
-    * Filter by specific criteria dps/tank/healing
-    * Add, edit, delete.
-
-  3. Integration
-    * Character model
-    * Character service
-    * Character List component
-    * Character detail component
-    * Admin component
-    * Edit component
-    * Welcome component
-    * Routing app
-    * Role/type pipe
-
-    4.  UX/UI
-      * Foundation
-      * Admin/User toggle
-
-    5. Polish
-      * Edit README
-      * Dynamic page content - hide/show forms
-      * Materialize

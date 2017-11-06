@@ -14,16 +14,14 @@
     </select>
   </div>
 </div>
-<div class="row">
-  <div *ngFor="let character of characters | async | role:filterByRole" class="row">
+<div *ngFor="let character of characters | async | role:filterByRole" class="small-12 columns">
+  <div class="small-12 small-centered columns">
+    <h3 class="text-center infoText" (click)="goToDetail(character)">{{character.name}}</h3>
     <div class="small-8 small-centered columns">
-      <h2 class="text-center infoText" (click)="goToDetail(character)">{{character.name}}</h2>
-      <div class="small-6 small-centered colums">
-        <img (click)="goToDetail(character)" src="{{character.image}}" alt="{{character.name}}" class="float-center listImage">
-      </div>
-      <div *ngIf="currentRoute === '/admin'">
-        <app-edit [selectedCharacter]="character"></app-edit>
-      </div>
+      <img (click)="goToDetail(character)" src="{{character.image}}" alt="{{character.name}}" class="float-center listImage">
+    </div>
+    <div *ngIf="currentRoute === '/admin'">
+      <app-edit [selectedCharacter]="character"></app-edit>
     </div>
   </div>
 </div>

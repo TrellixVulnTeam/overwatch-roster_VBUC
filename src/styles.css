@@ -25,6 +25,8 @@ body {
 .listImage {
   filter: none;
   -webkit-filter: grayscale(0%);
+  width: 400px%;
+  height: auto;
 }
 
 .listImage:hover {
